@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contactanos!</h1>
+    </header>
+    <main>
+    <!--FORMULARIO-->
+        <form action="">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+            <div>
+                <label for="Name">Nombre</label>
+                <input type="text" placeholder="Matias">
+            </div>
+            <br>
+            <div>
+                <label for="Surname">Apellido</label>
+                <input type="text" placeholder="Martinez">
+            </div>
+            <br>
+            <div>
+                <label for="Email">Email *</label>
+                <input type="email" required placeholder="matiasmartinez@gmail.com">
+            </div>
+            <br>
+            <div>
+                <label for="Password">Contraseña</label>
+                <input type="password">
+            </div>
+            <br>
+            <div>
+                <label for="Genero">Género</label>
+                <input type="radio" name="Genero" value="Femenino">Femenino <!--EL NAME TIENE QUE SER EL MISMO PARA QUE SEA SELECCIÓN ÚNICA-->
+                <input type="radio" name="Genero" value="Masculino">Masculino
+            </div>
+            <br>
+            <div>
+                <label for="Localidad">Localidad:</label>
+                <select name="Localidad" id="">
+                    <option value="">Libertad</option>
+                    <option value="">San Antonio de Padua</option>
+                    <option value="">Parque San Martín</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="Comentario">Comentario</label> 
+                <br>
+                <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reestablecer">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+
+    
+</body>
+</html>
