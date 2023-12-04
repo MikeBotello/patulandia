@@ -63,13 +63,6 @@ ul li:hover ul{
     font-family: 'Raleway', sans-serif;
 }
 
-.patulandia{
-    text-align: center;
-    width: 100px;
-    border-radius: 30%;
-}
-
-
 h2{
     color: rgb(0, 0, 0);
     text-align: center;
@@ -99,6 +92,11 @@ h2{
     border: solid 1px;
 }
 
+.logo_patulandia {
+    width: 120px;
+    justify-content: end;
+}
+
 .whatsapp{
     width: 50px;
     position: fixed;
@@ -106,5 +104,5 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
+
