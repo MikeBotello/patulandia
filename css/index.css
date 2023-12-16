@@ -1,102 +1,74 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-
-/*-------------HEADER-------------*/
-
-.logo {
-    padding: 10px;
-    width: 150px;
-    height: 70px;
+body{
+    background-color: #e2da8d;
 }
 
+.header{
+    background-color: midnightblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
 
-ul{
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* EMPIEZA BOTONES */
+.header .nav-links{
     list-style: none;
-    padding: 17px; /* ACHICA O AGRANDA LA BARRA DE NAVEGACIÓN */
-    background-color: midnightblue; /* COLOR DE FONDO LA BARRA DE NAVEGACIÓN */
-    text-align: right;
 }
 
-/*-------------PRIMER <li>-------------*/
-li{
-    display: inline-block; /* PONE EN LINEA A TODOS LOS ITEMS <li> */
-    width: auto; /* ANCHO DE TODOS LOS ITEMS <li> */
-    padding: 20px;
-    text-align: center;
-    position: relative;
-
+.header .nav-links li{
+    display: inline-block;
+    padding: 10px 20px
 }
 
-/*-------------SUB-MENU (1er caja interna-------------*/
-ul ul{
-    position: absolute; /* PERMITE QUE EL SUBMENU SE ABRA SIN QUE SE AGRANDE EL FONDO DE NAVEGACIÓN, SE INTERPONE Y SE DESPLIEGA */
-    display: none; /* SI LO SACO, APARECE EL SUBMENU...LE INDICO QUE NO SE MUESTRE LA CAJA QUE CONTIENE LOS SUBMENUS */
+.header .nav-links li:hover{
+    transform: scale(1.1);
 }
 
-/*-------------SEGUNDO <li> (2da caja interna)-------------*/
-ul ul li{ 
-    display: block; /* PONE EN BLOQUE A LOS ITEMS DEL SEGUNDO <li> */
-    padding: 10px; 
-}
-
-/*-------------BOTONES <a>-------------*/
-a{ 
-    text-decoration: none; /* REMOCION DE SUBRAYADO A LOS BOTONES <a> */
-    color: white; /* COLOR DE LOS BOTONES <a> */
-    font-weight: bold; /* COLOR DE HOVER DE LOS BOTONES <a> */
-    s
-    
-}
-
-/*-------------HOVER DE BOTONES <a>-------------*/
-a:hover{
-    color: red; /* COLOR DE HOVER DE LOS <a> */
-}
-
-/*-------------HOVER DE SUB-BOTONES-------------*/
-ul li:hover ul{
-    display: block; /* PONE LA CAJA DEL SUBMENU EN BLOQUE (antés estaba en none y no aparecia nada) */
-    width:300%; /* ANCHO DE CAJA DEL SUBMENU */
-    padding: 30%;
-    background-color: midnightblue; /* COLOR DE FONDO DEL SUBMENU */
-}
-
-
-.quienessomos{
-    color: white;
-    background-color: #2f495e;
-    font-family: 'Raleway', sans-serif;
-    width: 600px;
-    height: 70px;
-    padding: 10px;
-    margin: auto;
-    overflow: auto;
-}
-
-.contactanos{
-    color: blueviolet;
+.header .nav-links a{
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    text-transform: uppercase;
+
 }
 
-.panel{
-    border: solid 1px;
+.header .nav-links a:hover{
+    color: dodgerblue;
 }
 
-
+/* RESTO DEL BODY */
 .whatsapp {
     position: fixed;
-    top: 450px; /* Ajusta según sea necesario */
-    right: 10px; /* Ajusta según sea necesario */
+    top: 833px; /* Ajusta según sea necesario */
+    right: 40px; /* Ajusta según sea necesario */
 }
 
 .whatsapp img {
     width: 50px;
 }
 
+.espacio{
+    height: 50px;
+}

@@ -4,41 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patulandia Entretenimiento</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/              Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body> 
-    <header> 
+    <header class="header"> 
         <div class="logo">
-            <a href="index.html">
-                <img src="img/LogoPatulandia_Blanco_Interno.png" alt="Patulandia Entretenimiento" class="logo">
-            </a>
+            <a href="index.html"><img src="img/LogoPatulandia_Blanco_Interno.png" alt="Patulandia Entretenimiento" class="logo"></a>
         </div>
         <nav>
-            <ul class="header__menu">
-                <li class="header__item">   
-                    <a href="1_inicio.html">INICIO</a>
-                </li>
-                <li class="header__item">
-                    <a href="2_juegos.html">JUEGOS</a>
-                    <ul>
-                        <li>
-                            <a href="2.1_inflables.html">INFLABLES</a>
-                        </li>
-                        <li>
-                            <a href="2.2_plaza_blanda.html">PLAZA BLANDA</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="header__item">
-                    <a href="3_zona_cobertura.html">ZONA DE COBERTURA</a>
-                </li>
-                <li class="header__item">
-                    <a href="4_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li class="header__item">
-                    <a href="5_contactanos.html">CONTACTO</a>
-                </li>
+            <ul class="nav-links">
+                <li><a href="1_inicio.html">INICIO</a></li>
+                <!-- <ul>
+                    <li><a href="2.1_inflables.html">INFLABLES</a></li>
+                    <li><a href="2.2_plaza_blanda.html">PLAZA BLANDA</a></li>
+                </ul> -->
+                <li><a href="3_zona_cobertura.html">ZONA DE COBERTURA</a></li>
+                <li><a href="4_preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="5_contactanos.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -50,6 +33,10 @@
         </a>    
     </div>
 
+    <div class="espacio">
+        <br>
+    </div>
+
     <!-- ARRANCA CAROUSEL DE BOOSTRAP -->
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -59,13 +46,13 @@
         </div>
         <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="1.jpg" class="d-block w-100" alt="...">
+            <img src="img/1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="2.jpg" class="d-block w-100" alt="...">
+            <img src="img/2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="3.jpg" class="d-block w-100" alt="...">
+            <img src="img/3.jpg" class="d-block w-100" alt="...">
         </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
