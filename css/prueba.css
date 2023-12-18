@@ -5,12 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-body{
-    background-color: #e2da8d;
-}
+body {
+    background-image: url(wave-haikei.svg);
+}  
 
 .header{
-    background-color: midnightblue;
+    background-color: #1E3662;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -36,11 +36,14 @@ body{
 /* EMPIEZA BOTONES */
 .header .nav-links{
     list-style: none;
+    align-items: center;
+    margin-bottom: 0px
 }
 
 .header .nav-links li{
     display: inline-block;
     padding: 10px 20px;
+
 }
 
 .header .nav-links li:hover{
@@ -51,11 +54,10 @@ body{
     text-decoration: none;
     color: white;
     font-weight: bold;
-
 }
 
 .header .nav-links a:hover{
-    color: dodgerblue;
+    color: rgb(18, 121, 224);
 }
 
 /* RESTO DEL BODY */
@@ -71,4 +73,21 @@ body{
 
 .espacio{
     height: 50px;
+}
+
+
+.segundasection{
+    height: 500px;
+    background-color: #573089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias{
+
+}
+
+.violet{
+
 }
